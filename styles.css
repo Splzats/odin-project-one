@@ -1,114 +1,274 @@
 @font-face {
-    font-family: 'Trajan Pro';
-    src: url('fonts/TrajanPro-Regular.woff') format('woff2'),
-        url('fonts/TrajanPro-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Trajan Pro";
+  src: url("fonts/TrajanPro-Regular.woff") format("woff2"),
+    url("fonts/TrajanPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Trajan Pro';
-    src: url('fonts/TrajanPro-Bold.woff2') format('woff2'),
-        url('fonts/TrajanPro-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Trajan Pro";
+  src: url("fonts/TrajanPro-Bold.woff2") format("woff2"),
+    url("fonts/TrajanPro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ddd;
 }
 
 /* HEADER */
 
 header {
-    color: #fff;
-    background-color: #1f2937;
-    padding: 2rem 3rem 0 3rem;
+  color: #fff;
+  background-color: #1f2937;
+  padding: 2rem 3rem 0.5rem 3rem;
+  margin-bottom: 2rem;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .logo-box {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-
 .logo {
-    font-size: 2.5rem;
-    font-family: 'Trajan Pro';
-    letter-spacing: .5rem;
-    font-weight: bold;
-    margin-left: .5rem;
-    margin-bottom: -.6rem;
+  font-size: 2.5rem;
+  font-family: "Trajan Pro";
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  margin-bottom: -0.6rem;
 }
 
 nav ul {
-    display: flex;
-    gap: 1rem;
-    list-style: none;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
 }
 
 nav ul a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .hero-box {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 .name-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .hero-text-box {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    max-width: 700px;
-    font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 700px;
+  font-size: 1.5rem;
 }
 
 .name {
-    font-family: 'Trajan Pro';
-    font-size: 3rem;
-    letter-spacing: .2rem;
-    margin-bottom: -.6rem;
+  font-family: "Trajan Pro";
+  font-size: 3rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: -0.6rem;
 }
 
 .description,
 .tag-line {
-    line-height: 1.5;
+  line-height: 1.5;
+}
+
+.hero-img {
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hero-box ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
 }
 
 .hero-box ul li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  list-style: none;
+}
+
+/* Main */
+
+.ability-box {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Trajan Pro";
+  font-weight: bold;
+}
+
+.ability-box ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+}
+
+.ability-wrapper {
+  background-color: #1f2937;
+  color: #fff;
+  border-radius: 6px;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.ability-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.ability-title-box {
+  display: flex;
+  align-items: center;
+}
+
+.ability-title-box img {
+  border-radius: 6px;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.ability-title {
+  margin-left: 2rem;
+  font-size: 2rem;
+  font-family: "Trajan Pro";
+}
+
+.centering-box {
+  display: flex;
+  justify-content: center;
+}
+
+.ability-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  padding: 1rem;
+  margin-top: 3rem;
+  background-color: #222;
+  border-radius: 6px;
+  width: 95%;
+  box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.grey-text {
+  color: #999;
+}
+
+.blue-text {
+  color: rgb(46, 114, 182);
+}
+
+.first-row {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.second-row {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.third-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.talent-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem 2rem 2rem;
+  width: 1200px;
+  border-radius: 6px;
+
+  color: #fff;
+  background-color: #1f2937;
+}
+
+.talent-box table {
+  border-spacing: 0 1rem;
+}
+
+.talent-box tr {
+  box-shadow: 2px 4px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.talent-box th,
+.talent-box td {
+  padding: 2rem;
+  background-color: #222;
+}
+
+.talent-box td {
+  display: flex;
+  justify-content: center;
+  width: 475px;
+}
+
+.lore-box {
+  background-color: #1f2937;
+  color: #fff;
+  border-radius: 6px;
+  width: 1200px;
+  margin: 0 auto 2rem auto;
+  padding: 1rem 2rem 2rem 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 2rem;
 }
